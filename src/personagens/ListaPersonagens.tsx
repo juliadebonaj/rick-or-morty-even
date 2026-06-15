@@ -18,6 +18,10 @@ export function ListaPersonagens({ personagens, carregando, erro, selecionados, 
     return <p className="mensagem-erro">{erro}</p>
   }
 
+  if (personagens.length === 0) {
+    return <p className="mensagem-vazia">Nenhum personagem nesta página com esse filtro.</p>
+  }
+
   return (
     <ul className="lista-personagens">
       {personagens.map((p) => (

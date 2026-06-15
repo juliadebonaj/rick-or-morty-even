@@ -1,4 +1,4 @@
-# Explorador de Personagens — Rick and Morty
+# Explorador de Personagens — Rick Or Morty
 
 Aplicação React que consome a [Rick and Morty API](https://rickandmortyapi.com/) e permite buscar personagens, filtrar por status/espécie, navegar por páginas e montar uma lista de favoritos.
 
@@ -20,16 +20,24 @@ Desafio da Aula 3 do curso de React.
 ## Screenshots
 
 ### Tela inicial
-![Tela inicial](docs/screenshots/inicio.png)
+![Index - 1](docs/screenshots/index-1.png)
+![Index - 2](docs/screenshots/index-2.png)
+![Index - 3](docs/screenshots/index-3.png)
 
-### Busca e filtros
-![Busca e filtros](docs/screenshots/busca-filtros.png)
+### Busca por nome
+![Busca por nome](docs/screenshots/pesquisa-nome.png)
 
-### Favoritos
-![Favoritos](docs/screenshots/favoritos.png)
+### Busca por nome combinada com filtro de status
+![Busca por nome com status](docs/screenshots/pesquisa-nome-status.png)
+
+### Filtro por espécie
+![Filtro por espécie](docs/screenshots/pesquisa-especie.png)
 
 ### Seleção múltipla
-![Seleção múltipla](docs/screenshots/selecao-multipla.png)
+![Seleção múltipla](docs/screenshots/selecionados.png)
+
+### Lista de favoritos
+![Favoritos](docs/screenshots/favoritos-lista.png)
 
 ## Stack
 

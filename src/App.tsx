@@ -82,7 +82,7 @@ function Conteudo() {
           />
           <Paginacao
             paginaAtual={pagina}
-            totalPaginas={totalPaginas}
+            totalPaginas={busca.trim() ? 1 : totalPaginas}
             onChange={setPagina}
           />
         </section>

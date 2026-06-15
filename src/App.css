@@ -146,7 +146,7 @@ article.card-personagem.selecionado {
 article.card-personagem .check {
   position: absolute;
   top: 0.4rem;
-  right: 0.5rem;
+  left: 0.4rem;
   background-color: #7aaed6;
   color: #fff;
   border-radius: 50%;
@@ -159,11 +159,55 @@ article.card-personagem .check {
   font-weight: bold;
 }
 
+article.card-personagem .estrela-favoritar {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: #c8c8c8;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+
+article.card-personagem .estrela-favoritar:hover {
+  transform: scale(1.15);
+}
+
+article.card-personagem .estrela-favoritar.ativa {
+  color: #f5b800;
+}
+
+article.card-personagem .rip {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6a6a72;
+  background-color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #b8b8c0;
+  vertical-align: middle;
+}
+
 article.card-personagem img {
   width: 110px;
   height: 110px;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+article.card-personagem.status-dead {
+  background-color: #e2e2e8;
+}
+
+article.card-personagem.status-unknown {
+  background-color: #f4f5f8;
 }
 
 article.card-personagem .info {
@@ -187,31 +231,82 @@ article.card-personagem p {
   color: #5a7a9a;
 }
 
-article.card-personagem .botao-favoritar {
-  margin-top: 0.4rem;
-  padding: 0.3rem 0.8rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #b8cfe8;
-  color: #1e3a5f;
+article.card-personagem .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.2rem 0;
+}
+
+article.card-personagem .tag {
+  padding: 0.15rem 0.55rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
   font-weight: 600;
-  font-size: 0.8rem;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: background-color 0.2s;
+  text-transform: capitalize;
+  border: 1px solid transparent;
 }
 
-article.card-personagem .botao-favoritar:hover {
-  background-color: #cfe0f0;
+/* Status */
+article.card-personagem .tag.status-alive {
+  background-color: #d6f0d8;
+  color: #2d6a3a;
+  border-color: #b0d8b5;
 }
 
-article.card-personagem .botao-favoritar.remover {
-  background-color: #f0d8d8;
-  color: #5c3a3a;
+article.card-personagem .tag.status-dead {
+  background-color: #f5d0d0;
+  color: #8b3a3a;
+  border-color: #e0a0a0;
 }
 
-article.card-personagem .botao-favoritar.remover:hover {
-  background-color: #e0c0c0;
+article.card-personagem .tag.status-unknown {
+  background-color: #e8e8e8;
+  color: #555;
+  border-color: #c8c8c8;
+}
+
+/* Espécies */
+article.card-personagem .tag.species-human {
+  background-color: #d4e4f5;
+  color: #1e3a5f;
+  border-color: #a8c4e0;
+}
+
+article.card-personagem .tag.species-alien {
+  background-color: #e0d5f0;
+  color: #4a2c6e;
+  border-color: #b8a3d6;
+}
+
+article.card-personagem .tag.species-humanoid {
+  background-color: #ffe4cc;
+  color: #6e3f1a;
+  border-color: #e0b890;
+}
+
+article.card-personagem .tag.species-robot {
+  background-color: #d0e8e8;
+  color: #1e5454;
+  border-color: #9ec8c8;
+}
+
+article.card-personagem .tag.species-animal {
+  background-color: #f5e4d0;
+  color: #6e4a1a;
+  border-color: #d6b890;
+}
+
+article.card-personagem .tag.species-mythological-creature {
+  background-color: #f5d4e8;
+  color: #6e1e4a;
+  border-color: #d6a3c0;
+}
+
+article.card-personagem .tag.species-unknown {
+  background-color: #e8e8e8;
+  color: #555;
+  border-color: #c8c8c8;
 }
 
 /* ===== ASIDE DE FAVORITOS ===== */

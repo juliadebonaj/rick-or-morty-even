@@ -22,22 +22,33 @@ export function CardPersonagem({ personagem, selecionado, onToggle }: Props) {
 
   return (
     <article
-      className={`card-personagem${selecionado ? ' selecionado' : ''}`}
+      className={`card-personagem status-${personagem.status.toLowerCase()}${selecionado ? ' selecionado' : ''}`}
       onClick={() => onToggle(personagem)}
     >
       <img src={personagem.image} alt={personagem.name} />
       <div className="info">
-        <h3>{personagem.name}</h3>
-        <p>
-          {personagem.status.charAt(0).toUpperCase() + personagem.status.slice(1)} — {personagem.species}
-        </p>
-        <button
-          className={`botao-favoritar${ehFavorito ? ' remover' : ''}`}
-          onClick={handleFavoritar}
-        >
-          {ehFavorito ? 'Remover favorito' : 'Favoritar'}
-        </button>
+        <h3>
+          {personagem.name}
+          {personagem.status.toLowerCase() === 'dead' && (
+            <span className="rip">RIP</span>
+          )}
+        </h3>
+        <div className="tags">
+          <span className={`tag status-${personagem.status.toLowerCase()}`}>
+            {personagem.status.charAt(0).toUpperCase() + personagem.status.slice(1)}
+          </span>
+          <span className={`tag species-${personagem.species.toLowerCase().replace(/\s+/g, '-')}`}>
+            {personagem.species}
+          </span>
+        </div>
       </div>
+      <button
+        className={`estrela-favoritar${ehFavorito ? ' ativa' : ''}`}
+        onClick={handleFavoritar}
+        title={ehFavorito ? 'Remover dos favoritos' : 'Favoritar'}
+      >
+        {ehFavorito ? '★' : '☆'}
+      </button>
       {selecionado && <span className="check">✓</span>}
     </article>
   )

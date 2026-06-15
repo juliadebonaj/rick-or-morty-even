@@ -27,7 +27,7 @@ Desafio da Aula 3 do curso de React.
 ## Como rodar
 
 ```bash
-cd rick-and-morty
+cd rick-or-morty
 npm install
 npm run dev
 ```

@@ -32,11 +32,20 @@ Desafio da Aula 3 do curso de React.
 ### Filtro por espécie
 ![Filtro por espécie](docs/screenshots/pesquisa-especie.png)
 
+### Nenhum personagem encontrado
+![Nenhum encontrado](docs/screenshots/nenhum-encontrado.png)
+
 ### Seleção múltipla
 ![Seleção múltipla](docs/screenshots/selecionados.png)
 
 ### Lista de favoritos
 ![Favoritos](docs/screenshots/favoritos-lista.png)
+
+### Erro de carregamento
+![Erro de carregamento](docs/screenshots/erro-load.png)
+
+### Erro ao consumir a API
+![Erro de fetch](docs/screenshots/erro-fetch.png)
 
 ## Stack
 
